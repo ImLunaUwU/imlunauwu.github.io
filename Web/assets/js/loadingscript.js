@@ -5,20 +5,20 @@ window.onload = function () {
     document.getElementById("loading").id = 'loaded';
 	document.getElementById("bodyloading").id = 'bodyloaded';
     console.log("Loading Complete!");
-    }, 500);
-	// Remove Overlay After Load 
+    }, 5);
+	// Remove Overlay After Load
 		console.log("Loading gun.");
 		setTimeout(function(){
     var el = document.getElementById('finishedloading');
 el.remove();
     console.log("*kills load overlay*");
-    }, 2000);
-	
-	// Remove After Load 
+	}, 1100);
+
+	// Remove Load Script After Load
 		console.log("Loading 2nd gun.");
 		setTimeout(function(){
     var el = document.getElementById('suicidaljavascript');
 el.remove();
     console.log("*commits die*");
-    }, 2500);
+	}, 1200);
 }
