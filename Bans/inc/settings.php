@@ -13,7 +13,7 @@ class Settings {
 
         $this->username = '';
         $this->password = '';
-balls test
+
         // If you set a table prefix in config.yml, set it here as well
         $this->table_prefix = "litebans_";
 
