@@ -127,7 +127,7 @@
 										<h4>What tools do I use?</h4>
 										<p>Tools/Software used for my work.</p>
 									</header>
-									<p>I use a ton of Adobe software, such as Photoshop, After Effects, Substance Painter/Designer. This site was made inside Atom. Other than those I regularly use Unity, Blender and various other unstable programs.</p>
+									<p>I use a ton of Adobe software, such as Photoshop, After Effects, Substance Painter/Designer. This site was made from scratch in Notepad++, Atom and now in VSCode. Other than those I regularly use Unity, Blender and various other unstable programs.</p>
 								</div>
 							</div>
 						</div>
@@ -160,10 +160,16 @@
 										<h4>Who are you?</h4>
 										<p>Getting personal.</p>
 									</header>
-									<p>I am Luna. Previously know as plsMajor. I am a pansexual, transgender girl from Denmark, who can't find her way out of the closet.
-									Mom, if you're reading this... Surprise..?
-									I came out to the internet folks a long time ago.</p>
+									<p id="omgimthisold"></p>// This is basically a placeholder, see script under. 
 							  </div>
+							<script>
+							var today = new Date();
+							var date = new Date(2004,15,6,0,0,0);
+							var age = (today-date)/(1000*60*60*24*365);	
+							var omgagetext = document.getElementById('omgimthisold');
+							omgagetext.innerHTML += `I am Luna. Previously know as plsMajor. I am an ${age.toFixed(0)} year old, pansexual, transgender girl from Denmark, who can't find her way out of the closet.<br>Update: As of 02/02/2023, Luna has been out of the closet.<br>I came out to the internet folks a long time ago.`;
+							</script>
+							
 							</div>
 							<div class="feature">
 								<div class="image rounded"><img loading="lazy" src="images/pic10.webp" alt="" /></div>
