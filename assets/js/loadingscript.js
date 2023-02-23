@@ -10,7 +10,9 @@ window.onload = function () {
 		console.log("Loading gun.");
 		setTimeout(function(){
     var el = document.getElementById('finishedloading');
-el.remove();
+	el.remove();
+	// Fade-in body when the page has loaded
+	$("body").fadeIn(2000);
     console.log("*kills load overlay*");
 	}, 1100);
 
