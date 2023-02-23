@@ -5,7 +5,7 @@ window.onload = function () {
     document.getElementById("loading").id = 'loaded';
 	document.getElementById("bodyloading").id = 'bodyloaded';
     console.log("Loading Complete!");
-    }, 5);
+    }, 500);
 	// Remove Overlay After Load
 		console.log("Loading gun.");
 		setTimeout(function(){
