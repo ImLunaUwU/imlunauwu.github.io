@@ -22,11 +22,12 @@
 	}
 
 	body {
+		display: none;
 		line-height: 1;
 	}
 	
 	body.finishedloading {
-		display: none;
+		display: initial;
 	}
 
 
