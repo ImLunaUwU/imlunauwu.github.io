@@ -2704,6 +2704,7 @@ body.dark-theme .menu-button::after {
 
 		.feature-grid .feature {
 			display: inline-block;
+			float: left;
 			margin-bottom: 3em;
 			width: 50%;
 		}
