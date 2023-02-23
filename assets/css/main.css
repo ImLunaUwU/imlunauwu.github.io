@@ -22,8 +22,11 @@
 	}
 
 	body {
-		display: none;
 		line-height: 1;
+	}
+
+	body.landing {
+		display: none;
 	}
 	
 	body.finishedloading {
