@@ -25,7 +25,7 @@
 		line-height: 1;
 	}
 
-	body.landing {
+	body #landing {
 		display: none;
 	}
 	
