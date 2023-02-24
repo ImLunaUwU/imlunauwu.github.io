@@ -42,6 +42,14 @@ span.ineedthistobespecial {
   z-index: 1;
 }
 
+ul.menu {
+	color: #bdbdbd;
+}
+
+.menu-toggle:checked ~ .menu a {
+	color:#525252;
+}
+
 label.menu-button-container::before {
 	display: none;
 }
@@ -285,6 +293,14 @@ img#LunaUwU {
 	body.dark-theme .menu {
 				color: #bfbfbf;
 
+	}
+
+	body.dark-theme ul.menu {
+		color: #222;
+	}
+	
+	body.dark-theme .menu-toggle:checked ~ .menu a {
+		color:#bfbfbf;
 	}
 
 body.dark-theme .menu-button,
