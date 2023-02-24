@@ -57,8 +57,8 @@ label.menu-button-container {
   display: flex;
   flex-direction: row;
 	position: relative;
-	color:#666666;
-	background-color: #3f3f3f;
+	color:#3a3a3a;
+	background-color: #8f8f8f;
   text-decoration: none;
   padding: 1rem;
   align-items: center;
@@ -3412,8 +3412,8 @@ body.dark-theme .menu-button::after {
 
 	#footer {
 		padding: 8em 0 6em 0;
-		background: #f6f6f6;
-		color: #aaa;
+		background: #c4c4c4;
+		color: #8f8f8f;
 		text-align: center;
 	}
 
@@ -3422,12 +3422,12 @@ body.dark-theme .menu-button::after {
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			color: #aaa;
+			color: #3a3a3a;
 			text-decoration: none;
 		}
 
 			#footer a:active, #footer a:hover {
-				color: #666;
+				color: #3a3a3a;
 			}
 
 		#footer .icons {
