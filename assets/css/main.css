@@ -324,19 +324,12 @@ body.dark-theme .menu-button::after {
 
 
 	body.dark-theme #footer {
-		padding: 8em 0 6em 0;
 		background: #383838;
 		color: #747474;
-		text-align: center;
 	}
 
 	body.dark-theme #footer a {
-			-moz-transition: color 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
 			color: #bfbfbf;
-			text-decoration: none;
 		}
 
 		body.dark-theme #footer a:active, body.dark-theme #footer a:hover {
