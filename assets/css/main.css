@@ -220,17 +220,18 @@ img#LunaUwU {
 
 	}
 	body.dark-theme a {
-	color: #f32853;
-
+	color: #f32853;	
+	}
+	body.dark-theme .wrapper {
+		background-color: #252525;
 	}
 	body.dark-theme .wrapper.style1 {
-		background-color: #252525;
-	
-			}
+		background-color: #303030;
+	}
 	body.dark-theme .wrapper.style2 {
 	background-color: #383838;
 
-		}
+	}
 	body.dark-theme h2 {
 		color: #bfbfbf;
 
