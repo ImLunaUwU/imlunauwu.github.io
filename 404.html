@@ -10,20 +10,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-	<body class="landing" id="bodyloading">
-
-
-<div class="container" id="finishedloading"> <!-- Load (Eye saver) -->
-	<div class="overlay" id="loading">
-		<div class="loader">
-		<div class="inner one"></div>
-		<div class="inner two"></div>
-		<div class="inner three"></div>
-		</div>
-		<div class="loading-text" id="loading-text"><span>Loading. Please wait.</span></div>
-	</div>
-</div>
-
+		<body class="landing" id="bodyloading">
+			<div class="container" id="finishedloading"> <!-- Load (Eye saver) -->
+				<div class="overlay" id="loading">
+					<div class="loader">
+					<div class="inner one"></div>
+					<div class="inner two"></div>
+					<div class="inner three"></div>
+				</div>
+				<div class="loading-text" id="loading-text">
+					<span>Loading. Please wait.</span>
+				</div>
+			  </div>
+		  </div>
+		<main>
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="container">
@@ -41,10 +41,27 @@
 
 				</div>
 			</section>
+		</main>
+		<!-- Footer -->
+		<div data-include="footer"></div>
+		<aside>
+				<!-- Scripts -->
 
-<script src="assets/js/loadingscript.js" id="suicidaljavascript">// Loading Script
+<script src="assets/js/loadingscript.js" id="selfdelete">// Loading Script
 </script>
 <script src="assets/js/darkmode.js">// Theme Detector
 </script>
-</body>
-</html>
+<script defer src="assets/js/burgir.js">// Hamburger Mobile Menu And Header/Footer
+</script>
+<script src="https://kit.fontawesome.com/bc9e756a3e.js" crossorigin="anonymous">// Icons and shit
+</script>
+<script
+  defer src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous">// jQuery
+</script>
+<script defer src="assets/js/includehtml.js">// That script that let's me import the header and footer... In theory saving me time. (Spent over 10 hours making it fucking compatible. I want to commit sewer slide.)
+</script>
+</aside>
+	</body>
+	</html>
