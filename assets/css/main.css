@@ -289,7 +289,7 @@ img#LunaUwU {
 
 	@media (max-width: 801px) {
 		body.dark-theme .menu > li {
-			background-color: #252525;
+			background-color: #2c2c2c;
 		}
 		body.dark-theme #menu-toggle:checked ~ .menu a {
 			color:#bdbdbd;
