@@ -213,58 +213,6 @@ img#LunaUwU {
 		-webkit-text-size-adjust: none;
 	}
 
-/* Dark Theme Button */
-
-	#dark-theme-toggle-button {
-	filter: drop-shadow(0 0 0.5rem #404040);
-	position: absolute;
-	top: 1.3em;
-    right: 36em;
-	}
-
-	#index-btn-toggle {
-	filter: drop-shadow(0 0 1rem #424242);
-	}
-
-@media all and (max-width: 801px)
-{
-    #dark-theme-toggle-button {
-	position: absolute;
-	top: 1em;
-    right: 5em;
-	z-index: 10002;
-	padding-left: 1em;
-    padding-right: 1em;
-	}
-}
-
-@media all and (max-width: 340px)
-{
-    #dark-theme-toggle-button {
-	position: absolute;
-	z-index: 10002;
-	}
-}
-
-@media all and (min-width: 981px)
-{
-    #dark-theme-toggle-button {
-	position: absolute;
-	top: 1.3em;
-    right: 34em;
-	z-index: 10002;
-	}
-}
-
-@media all and (min-width: 1681px) {
-    #dark-theme-toggle-button {
-	position: absolute;
-	top: 1.3em;
-    right: 36em;
-	z-index: 10002;
-	}
-}
-
 /* Dark Mode styles */
 	body.dark-theme {
 	color: #eee;
@@ -356,6 +304,26 @@ body.dark-theme .menu-button::after {
 
 	}
 
+
+	body.dark-theme #footer {
+		padding: 8em 0 6em 0;
+		background: #cccccc;
+		color: #747474;
+		text-align: center;
+	}
+
+	body.dark-theme #footer a {
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+			color: #3f3f3f;
+			text-decoration: none;
+		}
+
+		body.dark-theme #footer a:active, body.dark-theme #footer a:hover {
+				color: #6e5858;
+			}
 
 /* Load page */
 .overlay {
