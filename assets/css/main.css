@@ -42,11 +42,11 @@ span.ineedthistobespecial {
   z-index: 1;
 }
 
-ul.menu {
-	color: #bdbdbd;
+.menu > li {
+	background-color: #bdbdbd;
 }
 
-.menu-toggle:checked ~ .menu a {
+#menu-toggle:checked ~ .menu a {
 	color:#525252;
 }
 
@@ -295,11 +295,11 @@ img#LunaUwU {
 
 	}
 
-	body.dark-theme ul.menu {
+	body.dark-theme .menu > li {
 		color: #222;
 	}
 	
-	body.dark-theme .menu-toggle:checked ~ .menu a {
+	body.dark-theme #menu-toggle:checked ~ .menu a {
 		color:#bfbfbf;
 	}
 
