@@ -3253,12 +3253,17 @@ body.dark-theme .menu-button::after {
 			width: 60em;
 		}
 
+		.wrapper.style1 {
+			background-color: #7e7e7e;
+		}
+
 		.wrapper.style2 {
-			background-color: #f6f6f6;
+			background-color: #d6d6d6;
 		}
 
 		.wrapper.style3 {
 			background-attachment: fixed;
+			background-color: #949494;
 			background-image: url("images/overlay.png"), url("../../images/banner.webp");
 			background-position: center center;
 			background-size: cover;
