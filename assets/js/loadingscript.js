@@ -8,7 +8,7 @@ window.onload = function () {
 	// Remove Overlay After Load
 	setTimeout(function(){
     var el = document.getElementById('finishedloading');
-	
+	el.remove();
 
 	// Fade-in body when the page has loaded
 	$("body").fadeIn(2000);
