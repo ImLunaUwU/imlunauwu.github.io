@@ -3428,7 +3428,7 @@ body.dark-theme .menu-button::after {
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			color: #222222;
+			color: #3f3f3f;
 			text-decoration: none;
 		}
 
