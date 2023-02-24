@@ -3418,8 +3418,8 @@ body.dark-theme .menu-button::after {
 
 	#footer {
 		padding: 8em 0 6em 0;
-		background: #c4c4c4;
-		color: #8f8f8f;
+		background: #949494;
+		color: #3f3f3f;
 		text-align: center;
 	}
 
@@ -3428,7 +3428,7 @@ body.dark-theme .menu-button::after {
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			color: #3a3a3a;
+			color: #222222;
 			text-decoration: none;
 		}
 
