@@ -58,7 +58,7 @@ label.menu-button-container {
   flex-direction: row;
 	position: relative;
 	color:#3a3a3a;
-	background-color: #cccccc;
+	background-color: #bdbdbd;
   text-decoration: none;
   padding: 1rem;
   align-items: center;
@@ -221,7 +221,7 @@ img#LunaUwU {
 
 	}
 	body.dark-theme a {
-	color: #f32853;	
+	color: #848fc4;	
 	}
 	body.dark-theme .wrapper {
 		background-color: #272727;
@@ -3392,7 +3392,7 @@ body.dark-theme .menu-button::after {
 
 	#footer {
 		padding: 8em 0 6em 0;
-		background: #cccccc;
+		background: #bdbdbd;
 		color: #3f3f3f;
 		text-align: center;
 	}
