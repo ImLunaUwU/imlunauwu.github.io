@@ -58,7 +58,7 @@ label.menu-button-container {
   flex-direction: row;
 	position: relative;
 	color:#3a3a3a;
-	background-color: #8f8f8f;
+	background-color: #cccccc;
   text-decoration: none;
   padding: 1rem;
   align-items: center;
@@ -68,6 +68,7 @@ label.menu-button-container {
 
 .top-nav a {
 	display: block;
+	color:#525252
 	text-decoration: none;
 	padding: 1em;
 }
@@ -3406,7 +3407,7 @@ body.dark-theme .menu-button::after {
 		}
 
 			#footer a:active, #footer a:hover {
-				color: #3a3a3a;
+				color: #696969;
 			}
 
 		#footer .icons {
