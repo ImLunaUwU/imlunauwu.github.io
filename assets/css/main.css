@@ -292,8 +292,11 @@ img#LunaUwU {
 			color: #222;
 		}
 		body.dark-theme #menu-toggle:checked ~ .menu a {
-			color:#bfbfbf;
+			color:#a5a5a5;
 		}
+		body.dark-theme .menu > li:not(:last-child) {
+			border-bottom: 1px solid #8f8d8d;
+		  }
 	  }
 
 body.dark-theme .menu-button,
