@@ -2283,7 +2283,7 @@ body.dark-theme .menu-button::after {
 
 			}
 
-			.statusframe{
+			#statusframe{
 				height: 1300em;
 			}
 
@@ -2296,7 +2296,7 @@ body.dark-theme .menu-button::after {
 
 			}
 
-			.statusframe{
+			#statusframe{
 				height: 1450em;
 			}
 
@@ -2309,7 +2309,7 @@ body.dark-theme .menu-button::after {
 
 			}
 
-			.statusframe{
+			#statusframe{
 				height: 1450em;
 			}
 
@@ -2322,7 +2322,7 @@ body.dark-theme .menu-button::after {
 
 			}
 
-			.statusframe{
+			#statusframe{
 				height: 1750em;
 			}
 
@@ -2335,7 +2335,7 @@ body.dark-theme .menu-button::after {
 
 			}
 
-			.statusframe{
+			#statusframe{
 				height: 1950em;
 			}
 
