@@ -2283,6 +2283,10 @@ body.dark-theme .menu-button::after {
 
 			}
 
+			.statusframe{
+				height: 1300em;
+			}
+
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2290,6 +2294,10 @@ body.dark-theme .menu-button::after {
 			body, input, select, textarea {
 				font-size: 11pt;
 
+			}
+
+			.statusframe{
+				height: 1450em;
 			}
 
 		}
@@ -2301,6 +2309,10 @@ body.dark-theme .menu-button::after {
 
 			}
 
+			.statusframe{
+				height: 1450em;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2310,6 +2322,10 @@ body.dark-theme .menu-button::after {
 
 			}
 
+			.statusframe{
+				height: 1750em;
+			}
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -2317,6 +2333,10 @@ body.dark-theme .menu-button::after {
 			body, input, select, textarea {
 				font-size: 12pt;
 
+			}
+
+			.statusframe{
+				height: 1950em;
 			}
 
 		}
