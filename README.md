@@ -2,8 +2,6 @@
 ### The stuff nobody asked for.
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L4L7DX3VR)
 
-# WARNING: WIP BRANCH. THIS BRANCH CONTAINS IN PROGRESS CONTENT, AND WILL HAVE BUGS AND UNFINISHED WORK!
-
 YEEEEEEEEEEEEEEHAWW, more stuff coming soon.
 
 Everything you see here is also hosted on https://lunauwu.net with GitHub Pages!
