@@ -543,7 +543,7 @@ body {
 			}
 
 			#statusframe{
-				height: 100em;
+				height: 75em;
 			}
 
 		}
@@ -556,7 +556,7 @@ body {
 			}
 
 			#statusframe{
-				height: 120em;
+				height: 90em;
 			}
 
 		}
@@ -569,7 +569,7 @@ body {
 			}
 
 			#statusframe{
-				height: 1450em;
+				height: 95em;
 			}
 
 		}
@@ -582,7 +582,7 @@ body {
 			}
 
 			#statusframe{
-				height: 1750em;
+				height: 105em;
 			}
 
 		}
@@ -595,7 +595,7 @@ body {
 			}
 
 			#statusframe{
-				height: 1950em;
+				height: 115em;
 			}
 
 		}
@@ -682,7 +682,7 @@ body {
 		font-size: 0.8em;
 		position: relative;
 		top: -0.5em;
-		color: var(--tertiary-text-color);
+		color: var(--quinary-text-color);
 
 	}
 
@@ -1480,8 +1480,8 @@ body {
 
 .textbox {
 	background: var(--tertiary-bg-color);
+	color: var(--secondary-text-color);
 }
-
 
 
 
