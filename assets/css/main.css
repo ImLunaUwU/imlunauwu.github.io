@@ -23,18 +23,19 @@ body.dark-theme {
 	--primary-bg-color: #383838;
 	--secondary-bg-color: #303030;
 	--tertiary-bg-color: #6e6e6e;
-	--primary-text-color: #bfbfbf;
+	--primary-text-color: #cacaca;
 	--secondary-text-color: #fff;
 	--tertiary-text-color: #aaa;
 	--quaternary-text-color: #ffffff;
 	--quinary-text-color: #c5c5c5;
+	--header-element-color: #d4d4d4;
 }
 
 /* Header */
 
 svg#LunaUwU {
 	width: 6em;
-	fill: var(--primary-text-color);
+	fill: var(--header-element-color);
 } 
 
 .headercontainer {
@@ -44,7 +45,6 @@ svg#LunaUwU {
 .top-nav {
   display: flex;
   position: relative;
-  color:#424242;
   background-color: var(--primary-bg-color);
   text-decoration: none;
   padding: 1em;
@@ -54,7 +54,7 @@ svg#LunaUwU {
 
 .top-nav a {
 	display: block;
-	color: var(--secondary-text-color);
+	color: var(--header-element-color);
 	text-decoration: none;
 	padding: 1em;
 }
@@ -543,7 +543,7 @@ body {
 			}
 
 			#statusframe{
-				height: 75em;
+				height: 85em;
 			}
 
 		}
@@ -556,7 +556,7 @@ body {
 			}
 
 			#statusframe{
-				height: 90em;
+				height: 95em;
 			}
 
 		}
@@ -582,7 +582,7 @@ body {
 			}
 
 			#statusframe{
-				height: 105em;
+				height: 110em;
 			}
 
 		}
@@ -595,7 +595,7 @@ body {
 			}
 
 			#statusframe{
-				height: 115em;
+				height: 125em;
 			}
 
 		}
@@ -1231,7 +1231,8 @@ body {
 		.wrapper.style3 {
 			background-attachment: fixed;
 			background-color: var(--secondary-bg-color);
-			background-image: url("images/overlay.png"), url("../../images/banner.webp");
+			background-image: url("../../images/banner.webp");
+			box-shadow: inset 0 0 0 1000px #2e2d34bd;
 			background-position: center center;
 			background-size: cover;
 		}
@@ -1288,7 +1289,8 @@ body {
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/banner.webp");
+		background-image: url("../../images/banner.webp");
+		box-shadow: inset 0 0 0 1000px #2e2d34bd;
 		background-position: center top;
 		background-size: cover;
 		line-height: 1.75;
