@@ -141,14 +141,24 @@ svg#LunaUwU {
   }
 
 
-/*  */
+/* Footer Icons */
 
+.icon {
+	text-decoration: none;
+	border-bottom: none;
+	position: relative;
+}
+	.icon > .label {
+		display: none;
+	}
 
-
-
-
-
-
+.icons svg {
+	fill: var(--secondary-text-color);
+	width: 90%;
+}
+.icons svg:hover {
+    fill: var(--tertiary-text-color);
+}
 
 
 
@@ -171,13 +181,6 @@ svg#LunaUwU {
 	body {
 		line-height: 1;
 	}
-
-
-	
-	body.landing {
-		display: initial;
-	}
-
 
 /* Load page */
 .overlay {
@@ -809,27 +812,6 @@ body {
 
 		}
 
-
-
-/* Icon */
-
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
 /* Image */
 
 	.image {
@@ -1386,10 +1368,6 @@ body {
 		}
 
 /* Footer */
-
-	#footer {
-	z-index: 1000;
-	}
 
 	#footer {
 		padding: 8em 0 6em 0;
