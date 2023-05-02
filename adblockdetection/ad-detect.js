@@ -86,6 +86,7 @@ checkAdblock()
             } catch (error) {
                 status = true
             }
+
             return status;
         }
 
@@ -93,7 +94,8 @@ checkAdblock()
             return new Promise((resolve) => {
                 setTimeout(() => {
                     let status = false;
-                    const iframe = document.getElementById("ads-banner");
+                    const iframe = document.getElementById("banner");
+                    iframe.classList.add("adsbygoogle", "adsbygoogle-noablate", "ads-banner", "ad-container", "banner", "ad", "aside-ad", "bannerad", "ad_unit", "img_ad", "ad-slot", "sponsored-post");
                     if (iframe.style.display == "none" ||
                         iframe.style.display == "hidden" ||
                         iframe.style.visibility == "hidden" ||
@@ -109,7 +111,7 @@ checkAdblock()
             const iframe = document.createElement("iframe");
             iframe.height = "1px";
             iframe.width = "1px";
-            iframe.id = "ads-banner";
+            iframe.id = "banner";
             iframe.src = "https://lunauwu.net/?ads-banner"; // This URL doesn't actually matter, it's just there to not create errors.
             document.body.appendChild(iframe);
         }
