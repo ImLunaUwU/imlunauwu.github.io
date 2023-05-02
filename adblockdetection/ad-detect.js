@@ -44,7 +44,7 @@ checkAdblock()
 
             if (status) return status;
 
-            url = '//https://rcm-na.amazon-adsystem.com/'
+            url = '//rcm-na.amazon-adsystem.com/'
             request = new Request(url, config);
             try {
                 await fetch(request);
