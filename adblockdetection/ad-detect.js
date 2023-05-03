@@ -18,6 +18,7 @@ checkAdblock()
         async function hasAdblockByScript() {
             let status = false;
             let url = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            console.log("Google Syndication Alive.")
             const config = {
                 method: 'HEAD',
                 mode: 'no-cors',
@@ -34,6 +35,7 @@ checkAdblock()
 
 
             url = '//connect.facebook.net/en_US/fbevents.js'
+            console.log("FB Events Alive.")
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -45,6 +47,7 @@ checkAdblock()
             if (status) return status;
 
             url = '//rcm-na.amazon-adsystem.com/e/cm?o=1&p=1'
+            console.log("Amazon Adsystem Alive.")
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -56,6 +59,7 @@ checkAdblock()
             if (status) return status;
 
             url = '//adservice.google.com/adsid/integrator.js'
+            console.log("Google Adservice Alive.")
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -66,7 +70,8 @@ checkAdblock()
 
             if (status) return status;
 
-            url = 'https://hb.vntsm.com/v3/live/ad-manager.min.js'
+            url = '//hb.vntsm.com/v3/live/ad-manager.min.js'
+            console.log("Venatus Media Programmatic Ads Alive.")
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -79,6 +84,7 @@ checkAdblock()
 
 
             url = '//googleads.g.doubleclick.net/pagead/conversion/'
+            console.log("Google Ads Doubleclick Alive.")
             request = new Request(url, config);
             try {
                 await fetch(request);
