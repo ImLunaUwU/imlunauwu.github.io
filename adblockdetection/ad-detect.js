@@ -17,7 +17,7 @@ checkAdblock()
 
         async function hasAdblockByScript() {
             let status = false;
-            let url = "//pagead2.googleadservices.com"
+            let url = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
             const config = {
                 method: 'HEAD',
                 mode: 'no-cors',
@@ -33,7 +33,7 @@ checkAdblock()
             if (status) return status;
 
 
-            url = '//adtago.s3.amazonaws.com'
+            url = '//connect.facebook.net/en_US/fbevents.js'
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -44,7 +44,7 @@ checkAdblock()
 
             if (status) return status;
 
-            url = '//rcm-na.amazon-adsystem.com/'
+            url = '//rcm-na.amazon-adsystem.com/e/cm?o=1&p=1'
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -55,7 +55,7 @@ checkAdblock()
 
             if (status) return status;
 
-            url = '//adservice.google.com'
+            url = '//adservice.google.com/adsid/integrator.js'
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -66,7 +66,7 @@ checkAdblock()
 
             if (status) return status;
 
-            url = '//ads.yahoo.com'
+            url = 'https://hb.vntsm.com/v3/live/ad-manager.min.js'
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -78,7 +78,7 @@ checkAdblock()
             if (status) return status;
 
 
-            url = '//static.doubleclick.net'
+            url = '//googleads.g.doubleclick.net/pagead/conversion/'
             request = new Request(url, config);
             try {
                 await fetch(request);
@@ -95,7 +95,7 @@ checkAdblock()
                 setTimeout(() => {
                     let status = false;
                     const iframe = document.getElementById("banner");
-                    iframe.classList.add("adsbygoogle", "adsbygoogle-noablate", "ads-banner", "ad-container", "banner", "ad", "aside-ad", "bannerad", "ad_unit", "img_ad", "ad-slot", "sponsored-post");
+                     iframe.classList.add("adsbygoogle", "adsbygoogle-noablate", "ads-banner", "ad-container", "banner", "ad", "aside-ad", "bannerad", "ad_unit", "img_ad", "ad-slot", "sponsored-post");
                     if (iframe.style.display == "none" ||
                         iframe.style.display == "hidden" ||
                         iframe.style.visibility == "hidden" ||
