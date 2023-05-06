@@ -21,4 +21,13 @@ It was developed entirely for another web-dev who happened to need a detector wh
 I took it as a challenge and began working on detection which didn't just look for ads being deleted (Like browser extensions do), but also checks for ad servers being able to connect, thus detecting network level blocking, such as PiHole.
 If you decide to use these assets for your own project, please have some sort of credit linking to me, as I spent about 5 hours coding it lol
 
-Insert funny partner banner here
+
+
+
+### I've partnered with Kinetic Hosting!
+If you need a cheap server, you can use my code and affiliate link below.
+This will give you a discounted first month, and me a small commission, in the end benefitting us both!
+[![KineticLuna](https://cdn.discordapp.com/attachments/715960179803553812/1104414507821973604/luna.png)](https://billing.kinetichosting.net/aff.php?aff=341)
+
+Use code Luna for 15% off your first month!
+https://billing.kinetichosting.net/aff.php?aff=341
