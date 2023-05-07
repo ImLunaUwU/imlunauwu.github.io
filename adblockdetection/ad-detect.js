@@ -8,9 +8,10 @@ checkAdblock()
             }
 
             if (isBlocked) {
-                danger()
+                danger() // Halt all site activity if triggered?
                 console.log("Ad blocker is used.")
             } else {
+                safety() // You can use this to activate the rest of the site or whatever.
                 console.log("Ad blocker is not detected.")
             }
         }
