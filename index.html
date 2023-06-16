@@ -164,9 +164,9 @@
 									</header>
 									<p id="omgimthisold"></p> <!-- This is basically a placeholder, see script under. --> 
 							  </div>
-  <style>
+   <style>
     #omgimthisold {
-      cursor: default;
+      cursor: text;
       text-decoration: none;
     }
   </style>
@@ -186,7 +186,7 @@
       document.getElementById('omgimthisold').innerHTML = message;
 
       var formattedBirthDate = birthDate.toLocaleDateString('en-GB');
-      var tooltipMessage = "I was born on " + formattedBirthDate;
+      var tooltipMessage = "I was born on " + formattedBirthDate + ".";
       document.getElementById('omgimthisold').setAttribute('title', tooltipMessage);
     });
   </script>
