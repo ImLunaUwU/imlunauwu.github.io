@@ -164,12 +164,20 @@
 									</header>
 									<p id="omgimthisold"></p> <!-- This is basically a placeholder, see script under. --> 
 							  </div>
-							<script>
-							var today = new Date();
-							var date = new Date(2004,15,6,0,0,0);
-							var age = (today-date)/(1000*60*60*24*365);	
-							var omgagetext = document.getElementById('omgimthisold');
-							omgagetext.innerHTML += `I am Luna. Previously know as plsMajor. I am an ${age.toFixed(0)} year old, pansexual, transgender girl from Denmark, who can't find her way out of the closet.<br>Update: As of 02/02/2023, Luna has been out of the closet.<br>I came out to the internet folks a long time ago.`;
+							<script>window.addEventListener('load', function() {
+      var birthDate = new Date('2004-06-15'); // birth date YYYY-MM-DD
+      var currentDate = new Date();
+      
+      var age = currentDate.getFullYear() - birthDate.getFullYear();
+      
+      // Check if the current month and day is before the birth month and day
+      if (currentDate.getMonth() < birthDate.getMonth() || (currentDate.getMonth() === birthDate.getMonth() && currentDate.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      
+      var message = "I am Luna. Previously know as plsMajor. I am an " + age + " year old, pansexual, transgender girl from Denmark, who can't find her way out of the closet.<br>Update: As of 02/02/2023, Luna has been out of the closet.<br>I came out to the internet folks a long time ago.";
+      document.getElementById('omgimthisold').textContent = message;
+    });
 							</script>
 							
 							</div>
