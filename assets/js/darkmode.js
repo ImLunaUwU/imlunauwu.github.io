@@ -1,22 +1,31 @@
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    // If the system is in dark mode
-  // ...then use the .dark-theme class
-  document.body.classList.add("dark-theme");
+// Function to set the theme class on the body element
+function setTheme(theme) {
+  document.body.classList.remove("light-theme", "dark-theme");
+  document.body.classList.add(theme + "-theme");
 }
 
+// Check for user preference and set the initial theme
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  setTheme("dark");
+} else {
+  setTheme("light");
+}
+
+// Function to toggle between light and dark themes
+function toggleTheme() {
+  const currentTheme = document.body.classList.contains("light-theme") ? "light" : "dark";
+  const newTheme = currentTheme === "light" ? "dark" : "light";
+
+  setTheme(newTheme);
+  localStorage.setItem("theme", newTheme);
+}
+
+// Listen for changes in the user's color scheme preference
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    const newColorScheme = e.matches ? "dark" : "light";
-  document.body.classList.toggle("dark-theme");
-
-  // Let's say the theme is equal to light
-  let theme = "light";
-  // If the body contains the .dark-theme class...
-  if (document.body.classList.contains("dark-theme")) {
-    // ...then let's make the theme dark
-    theme = "dark";
-  }
-
-  // Then save the choice in localStorage
-  localStorage.setItem("theme", theme);
-  // Listen for a click on the button
+  const newColorScheme = e.matches ? "dark" : "light";
+  setTheme(newColorScheme);
+  localStorage.setItem("theme", newColorScheme);
 });
+
+// Call the toggleTheme function if you want to toggle the theme programmatically
+// toggleTheme();

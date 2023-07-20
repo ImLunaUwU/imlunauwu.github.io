@@ -7,28 +7,28 @@
 }
 
 /* Colors */
-body {
-  --primary-bg-color: #ffffff;
-  --secondary-bg-color: #ebebeb;
-  --tertiary-bg-color: #f9f9f9;
-  --primary-text-color: #3a3a3a;
-  --secondary-text-color: #000;
-  --tertiary-text-color: #505050;
-  --quaternary-text-color: #ffffff;
-  --quinary-text-color: #c5c5c5;
+body.light-theme {
+  --primary-bg-color: #f7f7f7;   /* Lighter background color */
+  --secondary-bg-color: #eaeaea; /* Light background color */
+  --tertiary-bg-color: #dcdcdc;  /* Even lighter background color */
+  --primary-text-color: #333333; /* Dark text color */
+  --secondary-text-color: #1a1a1a;  /* Darker text color */
+  --tertiary-text-color: #707070; /* Less prominent text color */
+  --quaternary-text-color: #f2f2f2; /* Very light gray text color */
+  --quinary-text-color: #8c8c8c; /* Lighter text color for less important content */
 }
 
 /* Dark Theme Version */
 body.dark-theme {
-  --primary-bg-color: #383838;
-  --secondary-bg-color: #303030;
-  --tertiary-bg-color: #6e6e6e;
-  --primary-text-color: #bfbfbf;
-  --secondary-text-color: #fff;
-  --tertiary-text-color: #aaa;
-  --quaternary-text-color: #ffffff;
-  --quinary-text-color: #c5c5c5;
-  --header-element-color: #d4d4d4;
+  --primary-bg-color: #2b2b2b;   /* Darker background color */
+  --secondary-bg-color: #1c1c1c; /* Even darker background color */
+  --tertiary-bg-color: #444444;  /* A bit lighter background color */
+  --primary-text-color: #f0f0f0; /* Light text color */
+  --secondary-text-color: #c7c7c7; /* Slightly darker text color */
+  --tertiary-text-color: #b5b5b5; /* Less prominent text color */
+  --quaternary-text-color: #ffffff; /* White text color */
+  --quinary-text-color: #a0a0a0; /* Slightly lighter text color */
+  --header-element-color: #d4d4d4; /* Header elements color (adjust if needed) */
 }
 
 /* Header */
