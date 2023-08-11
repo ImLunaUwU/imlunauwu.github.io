@@ -57,6 +57,25 @@
 					</div>
 				</section>
 
+				<script>
+					fetch('http://play.lunauwu.net:5001/playtime')
+						.then(response => response.json())
+						.then(data => {
+							// Update VRChat playtime
+							const vrcPlaytimeElement = document.getElementById('vrc-playtime');
+							vrcPlaytimeElement.textContent = `Hours on record: ${(data.vrchat / 60).toFixed(1)} hours`;
+				
+							// Update Beat Saber playtime
+							const bsPlaytimeElement = document.getElementById('bs-playtime');
+							bsPlaytimeElement.textContent = `Hours on record: ${(data.beat_saber / 60).toFixed(1)} hours`;
+						})
+						.catch(error => {
+							console.error('Error fetching playtime data:', error);
+						});
+				</script>
+				
+				
+
 			<!-- Two -->
 				<section id="two" class="wrapper style2 special">
 					<div class="container">
@@ -70,14 +89,14 @@
 								<div class="image fit captioned">
 									<img loading="lazy" id="vrcimg" src="images/pic02.webp" title="VRChat Logo" alt="VRChat Logo">
 									<h3 class="textbox">VRChat<br>I have way too many hours in this game, and I've spent way too much money on it.<br>Still worth it.</h3>
-									<sup>Hours on record 16/07/2023: 884.<br>Image Credit: VRChat.</sup>
+									<sup><div id="vrc-playtime">Loading VRChat playtime...</div><br>Image Credit: VRChat.</sup>
 								</div>
 							</div>
 							<div class="6u 12u$(xsmall)">
 								<div class="image fit captioned">
 									<img loading="lazy" id="bsimg" src="images/pic03.webp" title="Beat Saber Logo" alt="Beat Saber Logo">
 									<h3 class="textbox">Beat Saber<br>Another game I spend way too much time in. Makes my body hurt sometimes, but I'm addicted.</h3>
-									<sup>Hours on record 16/07/2023: 362.<br>Image Credit: Beat Saber/Beat Games.</sup>
+									<sup><div id="bs-playtime">Loading Beat Saber playtime...</div><br>Image Credit: Beat Saber/Beat Games.</sup>
 								</div>
 							</div>
 						</div>
