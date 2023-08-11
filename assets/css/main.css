@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap);
 
 /* Root, Variables, Global Variables */
 
@@ -579,7 +579,7 @@ body {
   background-color: var(--secondary-bg-color);
   background: #121212;
   color: #000;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 1680px) {
