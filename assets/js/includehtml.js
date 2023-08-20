@@ -4,4 +4,4 @@ $(function () {
     var file = 'assets/html/' + $(this).data('include') + '.html'
     $(this).load(file)
   })
-})
+});
