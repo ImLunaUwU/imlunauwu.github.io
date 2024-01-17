@@ -1,0 +1,1009 @@
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap);
+@import url(//db.onlinewebfonts.com/c/294afa63edf49dc293dd90373066b4d4?family=Whitney);
+
+
+
+
+/* Styling for the overlay banner */
+/* Unused in LIVE site, only visible on beta. */
+.overlay-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  z-index: 9999; /* Ensure the banner is on top of other content */
+}
+
+
+
+
+/*#region Global/Body Styling */
+
+/* Root, Variables, Global Variables */
+
+:root {
+  color-scheme: light dark; /* both supported */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+  font-weight: 500;
+}
+
+/* Colors */
+/* Light Theme */
+body.light-theme {
+  --primary-bg-color: #f7f7f7;   /* Lighter background color */
+  --secondary-bg-color: #eaeaea; /* Light background color */
+  --single-content-page-bg-color: #e4e4e4; /* Inbetween BG color for pages with one element */
+  --primary-text-color: #333333; /* Dark text color */
+  --secondary-text-color: #1a1a1a;  /* Darker text color */
+  --tertiary-text-color: #707070; /* Less prominent text color */
+  --header-element-color: #353535; /* Header elements color */
+  --header-color: #eeeeee; /* Color of the header */
+  --banner-text-color: #f0f0f0; /* Banner text color */
+  --prog-bg-color: #b8b8b8; /* Color of usage bar bg on /servers */
+  --prog-main-color: #4f9dda; /* Color of usage bar bg on /servers */
+  --discord-bg1: #ebedef;
+  --discord-bg2: #ffffff;
+  --discord-border: #e0dede;
+}
+
+/* Dark Theme Version */
+body.dark-theme {
+  --primary-bg-color: #2b2b2b;   /* Darker background color */
+  --secondary-bg-color: #1c1c1c; /* Even darker background color */
+  --single-content-page-bg-color: #242424; /* Inbetween BG color for pages with one element */
+  --primary-text-color: #f0f0f0; /* Light text color */
+  --secondary-text-color: #c7c7c7; /* Slightly darker text color */
+  --tertiary-text-color: #b5b5b5; /* Less prominent text color */
+  --header-element-color: #d4d4d4; /* Header elements color */
+  --header-color: #333333; /* Color of the header */
+  --banner-text-color: #f0f0f0; /* Banner text color */
+  --prog-bg-color: #707070; /* Color of usage bar bg on /servers */
+  --prog-main-color: #1d5a88; /* Color of usage bar bg on /servers */
+  --discord-bg1: #202225;
+  --discord-bg2: #2f3136;
+  --discord-border: #23262a;
+}
+
+ /* unvisited link */
+ a:link {
+  color: rgb(36, 135, 248);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(24, 95, 175);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: rgb(103, 147, 212);
+} 
+
+
+
+
+/* Reset some default styles */
+h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  }
+
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  }
+
+section {
+    padding: 2rem;
+  }
+
+/* Type */
+
+body {
+    padding-top: 0 !important;
+    background-color: var(--secondary-bg-color);
+    background: #121212;
+    color: var(--primary-text-color);
+    font-family: "Plus Jakarta Sans";
+  }
+
+  button {
+    cursor: pointer;
+}
+  
+/* #endregion */
+
+/*#region Header */
+
+svg#Luna {
+    width: 6em;
+    fill: var(--header-element-color);
+  }
+  
+  .headercontainer {
+    z-index: 2;
+  }
+  
+  .top-nav {
+    display: flex;
+    position: relative;
+    background-color: var(--header-color);
+    text-decoration: none;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .top-nav a {
+    display: block;
+    color: var(--header-element-color);
+    text-decoration: none;
+    padding: 1em;
+  }
+  
+  .nav-menu {
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    overflow: hidden;
+    background-color: var(--secondary-bg-color);
+    width: 0;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .nav-menu.active {
+    right: 0.5em;
+    z-index: 1;
+    width: 20em;
+    box-shadow: 0px 2px 17px 8px rgb(0 0 0 / 30%);
+  }
+  
+  .nav-item {
+    margin-left: 5rem;
+  }
+  
+  .nav-item::marker {
+    color: #ff000000;
+  }
+  
+  .nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  
+  .nav-link:hover {
+    color: var(--tertiary-text-color);
+  }
+  
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  
+  .navclick {
+    cursor: pointer;
+    transition: transform 400ms;
+  }
+  
+  .navclick.active {
+    transform: rotate(45deg);
+  }
+  
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--header-element-color);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+  
+  .navclick .top {
+    stroke-dasharray: 40 160;
+  }
+  
+  .navclick .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+  
+  .navclick .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+  
+  .navclick.active .top,
+  .navclick.active .bottom {
+    stroke-dashoffset: -64px;
+  }
+  
+  .navclick.active .middle {
+    transform: rotate(90deg);
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+ /*#endregion */
+
+/*#region Footer */
+
+  /* Footer Icons */
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+  }
+  .icon > .label {
+    display: none;
+  }
+  
+  .icons svg {
+    fill: var(--secondary-text-color);
+    width: 90%;
+  }
+  .icons svg:hover {
+    fill: var(--tertiary-text-color);
+  }
+
+
+ /* Footer */
+  
+ #footer {
+    padding: 4em 0 2em 0;
+    margin: 0;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+  }
+  
+  #footer a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+  }
+  
+  #footer a:active,
+  #footer a:hover {
+    color: var(--tertiary-text-color);
+  }
+  
+  #footer li {
+    color: var(--primary-text-color);
+    text-decoration: none;
+  }
+  #footer .icons {
+    font-size: 1.5em;
+  }
+  
+  #footer .icons li {
+    padding-right: 2em;
+    display: inline-block;
+  }
+
+  #footer .icons li:last-child {
+    padding-right: 0;
+  }
+  
+  #footer .copyright {
+    margin: 2em 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #footer .copyright li {
+    border-left: solid 1px rgba(144, 144, 144, 0.25);
+    display: inline-block;
+    list-style: none;
+    margin-left: 1.5em;
+    padding-left: 1.5em;
+  }
+  
+  #footer .copyright li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  @media screen and (max-width: 980px) {
+    #footer {
+      padding: 4em 0 2em 0;
+    }
+
+    #footer .icons li {
+        padding-right: 1.2em;
+    }
+  }
+  
+  @media screen and (max-width: 736px) {
+    #footer {
+      padding: 3em 0 2em 0;
+    }
+
+    #footer .icons li {
+        padding-right: 1em;
+    }
+  
+    #footer .icons {
+      font-size: 1em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #footer {
+      padding: 3em 0 1em 0;
+    }
+
+    #footer .icons li {
+        padding-right: 0.6em;
+    }
+  
+    #footer .copyright li {
+      border-left: 0;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+
+
+
+
+
+  /*#endregion*/
+
+/*#region Loading */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20000;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2b2b2b;
+    pointer-events: none;
+  }
+  
+  .container #loaded {
+    transition: 1s ease;
+    opacity: 0;
+  }
+  
+  .container #loading {
+    opacity: 1;
+    pointer-events: unset;
+  }
+  
+  /* Loading Animation */
+  
+  .loading-text {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 4.375em);
+    width: 100%;
+    height: 100px;
+    line-height: 6.25em;
+    display: inline-block;
+    margin: 0 0.3125em;
+    color: #fff;
+    font-family: "Plus Jakarta Sans";
+  }
+  
+  .loading-text2 {
+    position: absolute;
+    top: calc(50% + 1.25em);
+    left: calc(50% - 6.25em);
+    width: 100%;
+    height: 6.25em;
+    line-height: 6.25em;
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    font-family: "Plus Jakarta Sans";
+  }
+  
+  .loader {
+    position: absolute;
+    top: calc(50% - 2em);
+    left: calc(50% - 2em);
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    perspective: 50em;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 0.1875em solid #efeffa;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 0.1875em solid #efeffa;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 0.1875em solid #efeffa;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
+  
+  #bodyloading {
+    overflow: hidden;
+  }
+  
+  body.is-loading *,
+  body.is-loading *:before,
+  body.is-loading *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+
+/* #endregion */
+
+/*#region Width Warning */
+
+/* Add styles for the close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000; /* Change the color as needed */
+  pointer-events: all;
+}
+
+/* Style the width banner */
+.width-banner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f4433667; /* Change the background color as needed */
+  color: #fff; /* Change the text color as needed */
+  padding: 10px;
+  text-align: center;
+  z-index: 9999; /* Ensure it's on top of other content */
+  opacity: 100;
+  transition: opacity 1s ease;
+  pointer-events: none; /* Make the banner non-interactive */
+}
+
+/* Optional: Add transition for a smooth close animation */
+.width-banner.closed {
+  opacity: 0; /* Hide the banner with a fade-out effect */
+  transition: opacity 2s ease;
+  pointer-events: none; /* Make the banner non-interactive */
+}
+
+@media (max-width:375px) {
+  .width-banner {
+    display: initial;
+  }
+}
+
+/*#endregion*/
+
+
+/*#region Index Stuff */
+
+.banner {
+  padding: 16em 0 13em 0;
+  background-attachment: fixed;
+  background-image: url(https://lunauwu.net/images/banner.webp);
+  box-shadow: inset 0 0 0 1000px #2e2d34bd;
+  background-position: center top;
+  background-size: cover;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.banner h1, .banner p {
+  color: var(--banner-text-color);
+}
+
+/*#region Section1 */
+/* Apply general styling to the section */
+.section1 {
+  padding: 3rem;
+  background-color: var(--primary-bg-color);
+  text-align: center; /* Center content within the section */
+}
+
+/* Center-align section title */
+.section1 h2 {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* Adjust the width of the lists and center them */
+.section1 ul {
+  display: flex; /* Display lists side by side */
+  justify-content: center; /* Center lists horizontally */
+  flex-wrap: wrap; /* Allow lists to wrap to a new line if needed */
+  max-width: 700px; /* Set maximum width for the lists */
+  margin: 20px auto; /* Center-align the lists */
+  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove list bullets */
+}
+
+/* Style individual list items */
+.section1 li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-right: 10px; /* Add space between list items */
+}
+
+/* Arrange the divs side by side */
+.section1 .divs-container {
+  display: flex;
+  justify-content: center; /* Center divs horizontally */
+  align-items: center; /* Center divs vertically */
+  margin-top: 20px; /* Add space between title and divs */
+
+}
+
+@media (max-width:720px) {
+  .section1 .divs-container {
+    flex-direction: column; 
+  }
+}
+
+
+/* Style individual list items and force them onto new lines */
+.section1 li {
+  display: block; /* Force each list item onto a new line */
+}
+
+
+/* Set font and color for paragraph text */
+.section1 p {
+  font-size: 16px;
+  color: var(--tertiary-text-color);
+}
+
+/* Style the background and text of individual items */
+.randomness li,
+.passions li {
+  background-color: var(--secondary-bg-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*#endregion */
+
+/*#region Section2 */
+
+/* Apply general styling to the section */
+.section2 {
+  padding: 3rem 0;
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+}
+
+/* Arrange the divs side by side */
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Extend .image-container to match the height of .image-section */
+  margin-top: 20px; /* Add space between title and divs */
+  padding: 0 10rem;
+}
+
+@media (max-width:1000px) {
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0 2rem;
+    flex-direction: column;
+}
+}
+
+@media (max-width:1000px) {
+.image-title {
+    margin-top: 20px;
+}
+}
+
+/* Set font and color for paragraph text */
+.image-section p {
+  font-size: 16px;
+  color: var(--tertiary-text-color);
+}
+
+/* Apply general styling to .image-container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 50%;
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+@media (max-width:1000px) {
+  .image-container {
+    width: 80%;
+    padding: 0 0.5em; /* Adjust the gap between containers */
+  }
+}
+
+h3.image-title {
+  padding-bottom: 0.4em;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  height: auto;
+  image-rendering: auto;
+}
+
+.caption-box {
+  background-color: var(--primary-bg-color);
+  padding: 15px;
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; /* Ensure both .caption-box elements have the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align .playtime-text to the bottom */
+}
+
+.playtime-text {
+  margin-top: auto; /* Align .playtime-text to the bottom */
+  margin-bottom: 0.4em; /* Add a small gap */
+}
+
+.caption {
+  margin: 0;
+}
+
+
+
+/*#endregion */
+  
+/*#region Section 3 */
+
+/* Apply styling to the FAQ section */
+.faq-section {
+  padding: 3rem;
+  background-color: var(--primary-bg-color);
+  text-align: center;
+}
+
+/* Style FAQ items */
+.faq-item {
+  margin-top: 2rem;
+}
+
+/* Style FAQ questions */
+.faq-item h3.question {
+  font-size: 20px;
+  color: var(--primary-text-color);
+}
+
+/* Style FAQ answers */
+.faq-item p.answer {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+
+
+/*#endregion*/
+/*#endregion*/
+
+/*#region Contact */
+
+/* Styling for the contact section */
+.contact-section {
+  padding: 3rem;
+  background-color: var(--single-content-page-bg-color);
+  text-align: center;
+}
+
+/* Style contact items */
+.contact-item {
+  margin-top: 2rem;
+}
+
+/* Style contact item headings */
+.contact-item h3 {
+  font-size: 20px;
+  padding-top: 1rem;
+  color: var(--primary-text-color);
+}
+
+/* Style contact item content */
+.contact-item p {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+#discord-profile-container {
+  font-family: "Whitney", sans-serif;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.profilecard {
+	width: 250px;
+	margin: 30px auto 0 auto;
+	border-radius: 4px;
+	border: 3px solid var(--discord-border);
+	background: var(--discord-bg2);
+	display: flex;
+	flex-direction: column;
+}
+
+.profilecard .me {
+	padding-top: 15px;
+	margin: 0 auto;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background: var(--discord-bg1);
+	color: #fff;
+}
+
+.profilecard .me .avatar {
+	margin: 0px auto;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 80px;
+	height: 80px;
+}
+.profilecard .me .avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profilecard .me .username {
+	margin: 15px auto 15px auto;
+	text-align: center;
+	font-size: 14px;
+}
+.profilecard .me .username strong {
+	color: var(--primary-text-color);
+  font-weight: bold;
+}
+.profilecard .me .username span {
+	color: var(--secondary-text-color);
+	letter-spacing: -1px;
+}
+.profilecard .aboutme, .profilecard .note {
+	padding: 0.5rem 0.5rem 2rem 0.5rem;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+  align-items: flex-start;
+
+}
+.bio {
+  font-size: 13px;
+}
+.bio#firstbio {
+  padding-top: 4px;
+}
+.profilecard .note .noteheader {
+	padding-bottom: 0.5rem; 
+}
+
+  
+ /*#endregion*/
+
+/*#region Servers */
+
+
+.div-containerer {
+  background-color: var(--single-content-page-bg-color);
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.sysmonitor-container {
+  margin: 20px;
+  background-color: var(--single-content-page-bg-color);
+  color: var(--primary-text-color); 
+}
+
+
+h1 {
+  text-align: center;
+  color: var(--primary-text-color); 
+}
+
+#chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width:1000px) {
+  #chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .chart {
+    width: 90% !important;
+    align-self: center;
+  }
+}
+
+
+.chart {
+  width: 45%;
+  margin-bottom: 20px;
+  border: 1px solid var(--secondary-bg-color);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow yaaay */
+  background-color: var(--single-content-page-bg-color);
+}
+
+.chart canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--primary-text-color); 
+}
+
+.usage-info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#drives {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#drives li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.progress {
+  height: 20px;
+  background-color: var(--prog-bg-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--prog-main-color);
+  color: var(--primary-text-color); 
+  text-align: center;
+  line-height: 20px;
+}
+
+h4.center-text {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/*#endregion*/
+
+
+
+
+
+
+
+
+
+
+
+/* Space to allow for new region creation without having to open the others */

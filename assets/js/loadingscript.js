@@ -3,7 +3,7 @@ window.onload = function () {
     document.getElementById("loading").id = 'loaded';
 	document.getElementById("bodyloading").id = 'bodyloaded';
     console.log("Loading Complete!");
-    }, 500);
+    }, 100);
 
 	// Remove Overlay After Load
 	setTimeout(function(){
