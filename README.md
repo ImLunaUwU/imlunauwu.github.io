@@ -11,8 +11,7 @@ Please do not copy-paste everything.
 
 
 ## Known Issues/ToDo:
-* Scaling could be optimized for mobile on pages like /index and /downloads
-* Page loads for a while if Iframe content is unreachable on /servers
+* None at the moment. Please report to contact@lunauwu.net or imlunauwu on Discord.
 
 
 ### Notes:
