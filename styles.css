@@ -188,6 +188,7 @@ svg#Luna {
   
   .nav-item {
     margin-left: 5rem;
+    white-space: nowrap;
   }
   
   .nav-item::marker {
@@ -210,6 +211,7 @@ svg#Luna {
   .navclick {
     cursor: pointer;
     transition: transform 400ms;
+    -webkit-tap-highlight-color: transparent;
   }
   
   .navclick.active {
