@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap);
-@import url(//db.onlinewebfonts.com/c/294afa63edf49dc293dd90373066b4d4?family=Whitney);
+@font-face{
+  font-family: "Whitney-Medium";
+  src: url("/assets/fonts/Whitney-Medium.eot");
+  src: url("/assets/fonts/Whitney-Medium.woff2")format("woff2");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
 
 
 
@@ -822,7 +830,7 @@ h3.image-title {
 }
 
 #discord-profile-container {
-  font-family: "Whitney", sans-serif;
+  font-family: "Whitney-Medium", sans-serif;
 }
 
 .content {
