@@ -16,7 +16,7 @@ Please do not copy-paste everything.
 
 ### Notes:
 I used to have an anti-adblock thingy here. 
-I have moved it to a private repository to continue development there.
+I have moved it to a private repository as it was simply uhh... too good...
 If you're interested in getting your hands on it, [message me](https://lunauwu.net/contact). 
 
 
@@ -25,7 +25,7 @@ If you're interested in getting your hands on it, [message me](https://lunauwu.n
 ### I've partnered with Kinetic Hosting!
 If you need a cheap server, you can use my code and affiliate link below.
 This will give you a discounted first month, and me a small commission, in the end benefitting us both!
-[![KineticLuna](https://cdn.discordapp.com/attachments/715960179803553812/1104414507821973604/luna.png)](https://billing.kinetichosting.net/aff.php?aff=341)
+[![KineticLuna](https://i.imgur.com/ajU8Zx3.png)](https://billing.kinetichosting.net/aff.php?aff=341)
 
 Use code Luna for 15% off your first month!
 https://billing.kinetichosting.net/aff.php?aff=341
