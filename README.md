@@ -18,14 +18,3 @@ Please do not copy-paste everything.
 I used to have an anti-adblock thingy here. 
 I have moved it to a private repository as it was simply uhh... too good...
 If you're interested in getting your hands on it, [message me](https://lunauwu.net/contact). 
-
-
-
-
-### I've partnered with Kinetic Hosting!
-If you need a cheap server, you can use my code and affiliate link below.
-This will give you a discounted first month, and me a small commission, in the end benefitting us both!
-[![KineticLuna](https://i.imgur.com/ajU8Zx3.png)](https://billing.kinetichosting.net/aff.php?aff=341)
-
-Use code Luna for 15% off your first month!
-https://billing.kinetichosting.net/aff.php?aff=341
